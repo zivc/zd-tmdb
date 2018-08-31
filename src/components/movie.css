@@ -1,0 +1,25 @@
+.movie-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    padding-top: 150%;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-text {
+    transition: all 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955);;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+
+.movie-card:hover .movie-text {
+    opacity: 0;
+    bottom: -100%;
+}
